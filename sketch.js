@@ -5,7 +5,7 @@ function setup() {
   createCanvas(600, 600);
   background(200);
 
-  comnsole.log(dogs[0]);
+  console.log(dogs[0]);
 }
 
 function draw() {
