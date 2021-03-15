@@ -1,5 +1,11 @@
+//dogs I  have loved before
+let dogs = ["di/lon", "Ziggy", "mercedes", "nala", "kloot", "petunia"]
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
+  background(200);
+
+  comnsole.log(dogs[0]);
 }
 
 function draw() {
