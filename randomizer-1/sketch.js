@@ -1,23 +1,38 @@
-//dogs I  have loved before
-let dogs = [{
-  name: "dillon",
-  color: "dog treat color"
-}, {
-  name: "Ziggy",
-  color: "chartrese"
-}, {
-  name: "mercedes",
-  color: "poop"
-}, {
-  name: "petunia",
-  color: "rose gold"
-}, {
-  name: "kloot",
-  color: "coffee grind brown"
-}, {
-  name: "nala",
-  color: "stardust"
-}];
+//Flowers/Bouquet
+let flowers = [{
+    name: "Rose",
+    color: "dog treat color"
+  }, {
+    name: "Iris",
+    color: "chartrese"
+  }, {
+    name: "Hydrangea",
+    color: "poop"
+  }, {
+    name: "Carnation",
+    color: "rose gold"
+  }, {
+    name: "Peony",
+    color: "coffee grind brown"
+  }, {
+    name: "Hyacinth",
+    color: "stardust"
+  }, {
+    name: "Lilac",
+    color: "lkfjs"
+  }, {
+    name: "Orchid",
+    color: "sfkhekjf"
+  }, {
+    name: "Sunflower",
+    color: "yellow"
+  }, {
+    name: "Lily",
+    color: "Pink"
+  }, {
+    name: "Tulip",
+    color: "Blue"
+  }];
 
 let randomIndex;
 
@@ -27,11 +42,10 @@ function setup() {
 
 }
 
-function draw() {
-}
+function draw() {}
 
 function mousePressed() {
-  background( random(200,255));
-  randomIndex = int(random(dogs.length));
-  text(dogs[randomIndex].name, 50, 50);
+  background(random(200, 255));
+  randomIndex = int(random(flowers.length));
+  text(flowers[randomIndex].name, 50, 50);
 }
