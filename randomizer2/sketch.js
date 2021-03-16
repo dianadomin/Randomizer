@@ -24,6 +24,7 @@ let fortunes = [{
 }];
 
 let randomIndex;
+let animating = false;
 
 function setup() {
   createCanvas(600, 600);
@@ -34,11 +35,19 @@ function setup() {
 
 }
 
-function draw() {}
+function draw() {
+
+if (animating == true){
+  ellipse(random(width), random(height), random(50,150));
+}
 
 
-function mousePressed() {
+}
+
+function randomizer() {
+  animating = false;
   if (fortunes[0]) {
+    //displays ranm
     background(random(200, 255));
     randomIndex = int(random(fortunes.length));
     text(fortunes[randomIndex].name, 50, 50);
@@ -47,4 +56,16 @@ function mousePressed() {
     background(255, 253, 217);
     text("The future is yours to write!", 50, 50)
   }
+
+}
+
+function mousePressed() {
+ animating = true;
+  setTimeout(randomizer, 2000);
+
+
+
+
+
+
 }
