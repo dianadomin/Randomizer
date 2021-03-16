@@ -18,7 +18,7 @@ let fortunes = [{
 }, {
   name: "You will get a good nights rest",
 }, {
-  name: "Treat yourself today, reap the results tomorrow",
+  name: "Treat yourself today",
 }, {
   name: "Today 7 is your lucky number",
 }];
@@ -45,6 +45,6 @@ function mousePressed() {
     fortunes.splice(randomIndex, 1);
   } else {
     background(255, 253, 217);
-    text("There are no more fortunes for The future is yours to write!", 50, 50)
+    text("The future is yours to write!", 50, 50)
   }
 }
