@@ -25,6 +25,7 @@ let fortunes = [{
 
 let randomIndex;
 let animating = false;
+let button;
 
 function setup() {
   createCanvas(600, 600);
@@ -33,7 +34,12 @@ function setup() {
 
   text("Click to get your fortune told!", 50, 50)
 
-  createbutton("Click to now your fortune");
+  //button = createButton("click to randomize");
+  button = select('#randButton')
+  button.mousePressed(buttonPressed);
+  button.class("randomizerButton");
+
+
 }
 
 function draw() {
@@ -60,7 +66,7 @@ function randomizer() {
 
 }
 
-function mousePressed() {
+function buttonPressed() {
  animating = true;
   setTimeout(randomizer, 2000);
 
