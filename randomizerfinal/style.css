@@ -14,6 +14,7 @@ h1 {
   text-shadow: 3px 3px ##736c94;
   margin-left: auto;
   margin-right:auto;
+  margin-top:5px;
 }
 
 h2 {
@@ -24,6 +25,7 @@ h2 {
   text-shadow: 3px 3px ##736c94;
   margin-left: auto;
   margin-right:auto;
+  margin-top:10px;
 }
 
 html, body {
@@ -31,6 +33,14 @@ background-image: url("https://dianadomin.github.io/randomizer/randomizerfinal/f
 }
 
 canvas {
+display:block;
+border: auto;
+border-color: ##1a1a1a;
+border-width: 5px;
+margin-left: 435px;
+border-style: double;
+border-color: #d1d1d1;
+padding: 5px;
 
 
 
@@ -41,6 +51,7 @@ canvas {
   background-color: ##f0f0f0;
   font-family: Papyrus;
   margin-left: 550px;
+  margin-top: 20px;
   border: 10px;
   border-style: double;
 

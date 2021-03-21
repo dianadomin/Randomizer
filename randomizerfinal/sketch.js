@@ -31,11 +31,11 @@ let cnv;
 function setup() {
   cnv = createCanvas(400, 400);
   cnv.parent("canvasDiv");
-  background(171, 144, 212);
+  background(32,27,36);
   textSize(20);
 
-  text("Click to get your fortune told!", 50, 50)
 
+  text("Click to get your fortune told!", 50, 50)
   //button = createButton("click to randomize");
   button = select('#randButton')
   button.mousePressed(buttonPressed);
@@ -47,7 +47,11 @@ function setup() {
 function draw() {
 
 if (animating == true){
-  ellipse(random(width), random(height), random(50,150));
+ellipse(random(width), random(height), random(50,150));
+fill(0);
+
+
+
 }
 
 
@@ -57,7 +61,7 @@ function randomizer() {
   animating = false;
   if (fortunes[0]) {
     //displays ranm
-    background(random(200, 255));
+    background(random(100));
     randomIndex = int(random(fortunes.length));
     text(fortunes[randomIndex].name, 50, 50);
     fortunes.splice(randomIndex, 1);
@@ -71,10 +75,6 @@ function randomizer() {
 function buttonPressed() {
  animating = true;
   setTimeout(randomizer, 2000);
-
-
-
-
 
 
 }
