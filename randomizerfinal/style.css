@@ -27,7 +27,12 @@ h2 {
 }
 
 html, body {
-background-image: url("fortunebackground.jpg");
+background-image: url("https://dianadomin.github.io/randomizer/randomizerfinal/fortuneimages/fortunebg.jpg");
+}
+
+canvas {
+
+
 
 }
 .randomizerButton{
