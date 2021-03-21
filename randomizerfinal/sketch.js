@@ -33,6 +33,7 @@ function setup() {
 
   text("Click to get your fortune told!", 50, 50)
 
+  createbutton("Click to now your fortune");
 }
 
 function draw() {
