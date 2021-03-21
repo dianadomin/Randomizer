@@ -35,6 +35,8 @@ function setup() {
   textSize(20);
 
 
+
+
   text("Click to get your fortune told!", 50, 50)
   //button = createButton("click to randomize");
   button = select('#randButton')
