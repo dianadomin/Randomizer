@@ -26,9 +26,11 @@ let fortunes = [{
 let randomIndex;
 let animating = false;
 let button;
+let cnv;
 
 function setup() {
-  createCanvas(400, 400);
+  cnv = createCanvas(400, 400);
+  cnv.parent("canvasDiv");
   background(171, 144, 212);
   textSize(20);
 
