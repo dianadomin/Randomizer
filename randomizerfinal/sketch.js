@@ -28,9 +28,9 @@ let animating = false;
 let button;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(400, 400);
   background(171, 144, 212);
-  textSize(32);
+  textSize(20);
 
   text("Click to get your fortune told!", 50, 50)
 
